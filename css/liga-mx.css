@@ -1,0 +1,51 @@
+.catalog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Espaciado uniforme entre los elementos */
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px; /* Limitamos el ancho para que no se extienda demasiado */
+    margin: 0 auto; /* Centramos el contenedor */
+}
+
+.uniform-box {
+    display: block;
+    width: 30%; /* Aproximadamente un tercio del contenedor para 3 elementos por fila */
+    min-width: 300px; /* Tamaño mínimo para que no se encojan demasiado */
+    text-decoration: none;
+    color: #333;
+    border: 2px solid #000; /* Borde negro para el recuadro */
+    border-radius: 5px;
+    overflow: hidden;
+    transition: transform 0.2s;
+    margin-bottom: 20px; /* Espacio entre filas */
+    box-sizing: border-box; /* Aseguramos que el padding y el borde no afecten el ancho */
+}
+
+.uniform-box:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+}
+
+.uniform-content {
+    text-align: center;
+    padding: 15px;
+    background-color: #fff; /* Fondo blanco para el contenido */
+}
+
+.uniform-content img {
+    width: 100%; /* La imagen ocupa el ancho del contenedor */
+    height: 200px; /* Altura fija */
+    object-fit: contain; /* Cambiamos a contain para que la imagen se vea completa */
+    display: block; /* Evita espacios extra debajo de la imagen */
+}
+
+.uniform-content h3 {
+    font-size: 18px; /* Texto más grande */
+    margin: 10px 0;
+}
+
+.uniform-content p {
+    font-size: 16px; /* Texto más grande */
+    color: #555;
+    margin: 0;
+}

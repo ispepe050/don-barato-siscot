@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle del Uniforme - Don Barato</title>
+    <link rel="stylesheet" href="../css/detalle-uniforme.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <div class="header">
+        <h1>Detalle del Uniforme</h1>
+        <a href="liga-mx.html" class="quote-btn">Volver al Catálogo</a>
+        <a href="carrito.html" class="cart-btn">🛒</a>
+    </div>
+
+    <!-- Detalle del uniforme -->
+    <div class="uniform-detail">
+        <div class="uniform-image">
+            <img id="uniform-image" src="" alt="Uniforme">
+        </div>
+        <div class="uniform-info">
+            <h2 id="uniform-name"></h2>
+            <p id="uniform-category"></p>
+            <p id="uniform-price"></p>
+            <div class="options">
+                <label>Talla y Cantidad:</label>
+                <div class="size-options">
+                    <div class="size-option">
+                        <label for="size-s">S:</label>
+                        <input type="number" id="size-s" min="0" value="0">
+                    </div>
+                    <div class="size-option">
+                        <label for="size-m">M:</label>
+                        <input type="number" id="size-m" min="0" value="0">
+                    </div>
+                    <div class="size-option">
+                        <label for="size-x">X:</label>
+                        <input type="number" id="size-x" min="0" value="0">
+                    </div>
+                    <div class="size-option">
+                        <label for="size-xl">XL:</label>
+                        <input type="number" id="size-xl" min="0" value="0">
+                    </div>
+                </div>
+            </div>
+            <div class="options">
+                <label for="patches">Parches:</label>
+                <select id="patches">
+                    <option value="no">No (+$0)</option>
+                    <option value="yes">Sí (+$30)</option>
+                </select>
+            </div>
+            <button id="add-to-cart" class="add-to-cart-btn">Agregar al Carrito</button>
+        </div>
+    </div>
+
+    <!-- JavaScript para cargar los detalles del uniforme -->
+    <script src="../js/detalle-uniforme.js"></script>
+</body>
+</html>
